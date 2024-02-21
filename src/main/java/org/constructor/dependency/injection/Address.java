@@ -1,4 +1,4 @@
-package org.setter.dependency.injection;
+package org.constructor.dependency.injection;
 
 import javax.swing.*;
 

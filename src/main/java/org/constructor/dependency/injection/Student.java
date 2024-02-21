@@ -1,4 +1,4 @@
-package org.setter.dependency.injection;
+package org.constructor.dependency.injection;
 
 public class Student {
     private String name;

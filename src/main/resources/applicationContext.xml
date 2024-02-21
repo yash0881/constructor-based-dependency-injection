@@ -6,17 +6,17 @@
 
     <!-- bean definitions here -->
 
-    <bean class="org.setter.dependency.injection.Address" id="addrId">
-        <property name="Hno" value="490" />
-        <property name="city" value="Delhi" />
-        <property name="pincode" value="273029" />
+    <bean class="org.constructor.dependency.injection.Address" id="addrId">
+        <constructor-arg value="490" />
+        <constructor-arg value="Delhi" />
+        <constructor-arg value="273029" />
     </bean>
 
 
-    <bean class="org.setter.dependency.injection.Student" id="stdId">
-        <property name="name" value="Yash" />
-        <property name="roll" value="200" />
-        <property name="address" ref="addrId" />
+    <bean class="org.constructor.dependency.injection.Student" id="stdId">
+        <constructor-arg value="Yash" />
+        <constructor-arg value="200" />
+        <constructor-arg ref="addrId" />
     </bean>
 
 </beans>
