@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="
+        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <!-- bean definitions here -->
+
+    <bean class="org.setter.dependency.injection.Address" id="addrId">
+        <property name="Hno" value="490" />
+        <property name="city" value="Delhi" />
+        <property name="pincode" value="273029" />
+    </bean>
+
+
+    <bean class="org.setter.dependency.injection.Student" id="stdId">
+        <property name="name" value="Yash" />
+        <property name="roll" value="200" />
+        <property name="address" ref="addrId" />
+    </bean>
+
+</beans>
